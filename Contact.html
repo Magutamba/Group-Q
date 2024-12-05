@@ -1,11 +1,11 @@
+<!--Moïse Contact us paige code-->
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Good Health and Well-Being Contact us</title>
+		<title>Contact us paige</title>
 		<meta name="Moïse Tibasima" content="Contact us page">
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-			<title>Contact us paige</title>
 			 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 			  <!-- link to css and js file-->
 			 <link href="style.css" rel="stylesheet">
@@ -13,14 +13,15 @@
 		</head>
 	<body>
 	 
-        <!--code for the nav bar from bootstrap, using it to move from main paige to contacts and profile section. -->
+        <!--code for the nav bar from bootstrap, using it to move from main paige to contact us and profiles section. -->
 	  <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
   <li class="nav-item" role="presentation">
     <!--link to main paige-->
      <a href="index.html"> <button class="nav-link rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button></a>
   </li>
+    <!--link to Profiles paige-->
   <li class="nav-item" role="presentation">
-    <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Profiles</button>
+    <a href="Profiles.html"> <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Profiles</button></a>
   </li>
   <li class="nav-item" role="presentation">
     <button class="nav-link active rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact us</button>
@@ -30,23 +31,44 @@
 		<div class="container-fluid">
 			<div class="contact row">
 				<div class="col-sm-4">
-
 					
 			    </div>
-			    <br>
+			  
+			    <div class="col-sm-4">
+			    	<h1>Avatar</h1>
+					<img src="profile-male-icon-2048x1832-ydpc1sts.png" alt="Male icon" id="iconswap">
+					<!--<img src="" alt="" id="">-->
+					<button onClick="swap()">Swap avatar</button>
+
+			    </div>
+			     <div class="col-sm-4">
+
+			    </div>
+
+
+			</div>	
+		</div>
+		<div class="container-fluid">
+			<div class="contact row" >
+				<div class="col-sm-4">	
+			    </div>
 			    <div class="col-sm-4" id="formsty">
 
-					<h1>Contact</h1>
-					<!-- form asking for first, last name, phone number and email. Includes submit button.-->
+					<h1>Contact us</h1>
+					<!-- form asking for first, last name, phone number, email and query. Includes submit button.-->
 					<form>
 						
-						
-							First Name<input class="mb-2" id="fname" type="text">
-							Last Name<input class="mb-3" id="lname" type="text">
-							Phone Number<input class="mb-3" id="phnum" type="numeric">
-						    Email    <input class="m-2" id="em" type="text">
-						    Query    <input class="m-2" id="Qy" type="text">
-					        <input type="button" onClick="validate()" value="submit form">
+						    <lable id="lbs" for="fname">First Name</lable>
+							<input class="mb-2" id="fname" type="text">
+							<lable id="lbs" for="lname">Last Name</lable>
+							<input class="mb-2" id="lname" type="text">
+							<lable id="lbs" for="phnum">Phone Number</lable>
+							<input class="mb-2" id="phnum" type="numeric">
+							<lable id="lbs" for="em">Email</lable>
+						    <input class="mb-2" id="em" type="text">
+						    <lable id="lbs" for="Qy">Query</lable>
+						    <input class="mb-2" id="Qy" type="text">
+						    <input type="button" onClick="validate()" value="submit form">
 						
 						
 					
@@ -60,7 +82,8 @@
 
 
 			</div>	
-		</div>
+        </div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	</body>
 </html>
+<!--Moïse Contact us paige code-->
